@@ -34,7 +34,7 @@ def image_to_np(path):
     return np_vector
 
 # Import the image
-image = np.asarray(image_to_np('data/rabbit.png'))
+image = np.asarray(image_to_np('data/old_photo_05.png'))
 vector,noisyVec = imageGenerator(image)
 coefMatrix = trainer(vector)
 predictedVec = prediction(noisyVec,coefMatrix)
